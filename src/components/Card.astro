@@ -1,0 +1,23 @@
+---
+export interface Props {
+	title: string;
+	body: string;
+	href: string;
+	image?: string
+}
+
+const { href, title, body, image = null } = Astro.props;
+---
+
+<div class="card w-96 bg-neutral text-neutral-content">
+	{ 
+		image ? 
+		<figure><img src={image} alt={title} /></figure>:
+		''
+	}
+	<div class="card-body">
+	  <h2 class="card-title">{title}</h2>
+	  <p>{body}</p>
+	  <a href={href} class="text-primary hover:text-info">read more..</a>
+	</div>
+</div>
