@@ -1,5 +1,5 @@
 <template>
-    <div class="avatar animate__animated animate__fadeIn animate__delay-2s">
+    <div class="animate__animated animate__fadeIn animate__delay-2s">
         <div class="w-96">
             <img :src="`https://avatars.dicebear.com/api/open-peeps/${seed}.svg`" />
         </div>
