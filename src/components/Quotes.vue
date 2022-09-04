@@ -1,7 +1,7 @@
 <template>
     <div class="prose">
-        <p class="font-serif italic mb-6">{{ quote }}</p>
-        <p class="text-sm">—— {{ author }}</p>
+        <p class="font-serif italic text-3xl text-white mb-6">{{ quote }}</p>
+        <p class="text-sm text-white">—— {{ author }}</p>
     </div>
 </template>
 
