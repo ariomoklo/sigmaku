@@ -9,15 +9,17 @@ export interface Props {
 const { href, title, body, image = null } = Astro.props;
 ---
 
-<div class="card w-96 bg-neutral text-neutral-content">
+<div class="card bg-neutral text-neutral-content">
 	{ 
 		image ? 
-		<figure><img src={image} alt={title} /></figure>:
+		<slot name="image"><figure><img src={image} alt={title} /></figure></slot> :
 		''
 	}
 	<div class="card-body">
-	  <h2 class="card-title">{title}</h2>
-	  <p>{body}</p>
+	  <h2 class="card-title">
+		<slot name="title">{title}</slot>
+	  </h2>
+	  <slot name="body"><p>{body}</p></slot>
 	  <a href={href} class="text-primary hover:text-info">read more..</a>
 	</div>
 </div>

@@ -12,6 +12,8 @@ const { title } = Astro.props;
     <Navbar></Navbar>
 
     <main class="container m-auto p-[1em] max-w-[175ch] z-[-1]">
-        <slot></slot>
+        <div class="mt-6">
+            <slot></slot>
+        </div>
     </main>
 </Layout>

@@ -1,0 +1,29 @@
+---
+import Card from "./Card.astro";
+import { faker } from '@faker-js/faker';
+
+const random = (a = 1, b = 0) => {
+    const lower = Math.ceil(Math.min(a, b));
+    const upper = Math.floor(Math.max(a, b));
+    return Math.floor(lower + Math.random() * (upper - lower + 1))
+};
+
+const icon = [ "desktop-computer", "laptop", "open-file-folder", "clipboard", "office-building", "briefcase", "open-mailbox-with-raised-flag", "smiling-face-with-sunglasses" ]
+const image = icon[random(icon.length - 1)]
+const appName = faker.company.catchPhrase()
+const short = appName.split(' ').map(w => w.substring(0, 1)).join('').toUpperCase()
+const vpn = faker.datatype.boolean()
+---
+
+<Card body={appName} title={short} href="" image="icon">
+    <figure class="w-full h-64" slot="image">
+        <img src={`https://api.iconify.design/fluent-emoji-flat:${image}.svg`} alt="App" class="h-48 w-48 bg-neutral">
+    </figure>
+    <p slot="title" class="inline-flex items-center gap-3">
+        <span>{short}</span>
+        { vpn ? <a class="badge badge-success hover:badge-info">VPN</a> : '' }
+    </p>
+    <div class="prose" slot="body">
+        <p>{appName}</p>
+    </div>
+</Card>

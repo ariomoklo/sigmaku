@@ -3,6 +3,7 @@ lockfileVersion: 5.4
 specifiers:
   '@astrojs/tailwind': ^1.0.0
   '@astrojs/vue': ^1.0.0
+  '@faker-js/faker': ^7.5.0
   astro: ^1.1.5
   daisyui: ^2.24.0
   vue: ^3.2.30
@@ -14,6 +15,7 @@ dependencies:
 devDependencies:
   '@astrojs/tailwind': 1.0.0
   '@astrojs/vue': 1.0.0_vue@3.2.38
+  '@faker-js/faker': 7.5.0
   vue: 3.2.38
 
 packages:
@@ -394,6 +396,11 @@ packages:
     os: [linux]
     requiresBuild: true
     optional: true
+
+  /@faker-js/faker/7.5.0:
+    resolution: {integrity: sha512-8wNUCCUHvfvI0gQpDUho/3gPzABffnCn5um65F8dzQ86zz6dlt4+nmAA7PQUc8L+eH+9RgR/qzy5N/8kN0Ozdw==}
+    engines: {node: '>=14.0.0', npm: '>=6.0.0'}
+    dev: true
 
   /@jridgewell/gen-mapping/0.1.1:
     resolution: {integrity: sha512-sQXCasFk+U8lWYEe66WxRDOE9PjVz4vSM51fTu3Hw+ClTpUSQb718772vH3pyS5pShp6lvQM7SxgIDXXXmOX7w==}
