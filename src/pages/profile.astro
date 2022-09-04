@@ -1,0 +1,169 @@
+---
+import Content from "../layouts/Content.astro";
+
+---
+
+<Content title="Zaid Billah">
+    <div class="flex min-h-[85vh] gap-3">
+        <section class="flex flex-col gap-3 grow-0">
+            <div class="avatar">
+				<div class="w-64 mask mask-squircle ring ring-primary bg-white">
+				  <img src="https://avatars.dicebear.com/api/croodles/zaid.svg" />
+				</div>
+			</div>
+            <div class="prose">
+                <h5 class="mb-0 text-primary font-bold">SIGMA NIK</h5>
+                <p class="mt-0">S0XXXXXXXXX</p>
+            </div>
+            <div class="prose">
+                <h5 class="mb-0 text-primary font-bold">Email</h5>
+                <p class="mt-0">xxx.xxxxx@sigma.co.id</p>
+            </div>
+            <div class="prose">
+                <h5 class="mb-0 text-primary font-bold">Unit</h5>
+                <p class="mt-0 not-prose">
+                    <a href="/sigmaku/orgs/cis" class="hover:text-accent">CIS - Corporate Information System</a>
+                </p>
+            </div>
+            <button class="btn btn-accent mt-6">Update Profile</button>
+            <a href="/sigmaku/hc" class="btn btn-accent">HC Related</a>
+        </section>
+        <section class="grow-0">
+            <div class="divider divider-horizontal h-full"></div>
+        </section>
+        <section class="prose grow max-w-none mb-12">
+
+            <div id="personal" class="section-content w-full">
+                <h3>
+                    <span class="not-prose"><a href="#personal" class="text-primary hover:text-accent">#</a></span>
+                    Personal Detail
+                </h3>
+                <div class="flex flex-col gap-3">
+                    <div class="not-prose flex flex-wrap gap-3">
+                        <div class="form-control w-full max-w-xs">
+                            <label class="label">
+                              <span class="label-text">NIK</span>
+                            </label>
+                            <input type="text" placeholder="Type here" value="XXXXXXXXXXXXXXXXXX" class="input input-bordered w-full" disabled />
+                        </div>
+                        <div class="form-control w-full max-w-xs">
+                            <label class="label">
+                              <span class="label-text">First Name</span>
+                            </label>
+                            <input type="text" placeholder="Type here" value="Zaid" class="input input-bordered w-full" disabled />
+                        </div>
+                        <div class="form-control w-full max-w-xs">
+                            <label class="label">
+                              <span class="label-text">Last Name</span>
+                            </label>
+                            <input type="text" placeholder="Type here" value="Billah" class="input input-bordered w-full" disabled />
+                        </div>
+                    </div>
+                    <div class="not-prose flex flex-wrap gap-3">
+                        <div class="form-control w-full max-w-xs">
+                            <label class="label">
+                              <span class="label-text">Birthplace</span>
+                            </label>
+                            <input type="text" placeholder="Type here" value="Jakarta" class="input input-bordered w-full" disabled />
+                        </div>
+                        <div class="form-control w-full max-w-xs">
+                            <label class="label">
+                              <span class="label-text">Birthdate</span>
+                            </label>
+                            <input type="text" placeholder="Type here" value="XX XXXXXX XXXX" class="input input-bordered w-full" disabled />
+                        </div>
+                    </div>
+                    <div class="not-prose flex flex-wrap gap-3">
+                        <div class="form-control w-full max-w-xs">
+                            <label class="label">
+                              <span class="label-text">Address</span>
+                            </label>
+                            <input type="text" placeholder="Type here" value="Jl. Hidup, Gg. Penuh Makna, Blok D1 No. 1" class="input input-bordered w-full" disabled />
+                        </div>
+                        <div class="form-control w-full max-w-xs">
+                            <label class="label">
+                              <span class="label-text">City</span>
+                            </label>
+                            <input type="text" placeholder="Type here" value="Depok" class="input input-bordered w-full" disabled />
+                        </div>
+                        <div class="form-control w-full max-w-xs">
+                            <label class="label">
+                              <span class="label-text">Province</span>
+                            </label>
+                            <input type="text" placeholder="Type here" value="Jawa Barat" class="input input-bordered w-full" disabled />
+                        </div>
+                    </div>
+                    <div class="not-prose flex flex-wrap gap-3">
+                        <div class="form-control w-full max-w-xs">
+                            <label class="label">
+                              <span class="label-text">Contact</span>
+                            </label>
+                            <input type="text" placeholder="Type here" value="+62-XXXX-XXXX-XXXX" class="input input-bordered w-full" disabled />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="finance" class="section-content w-full">
+                <h3>
+                    <span class="not-prose"><a href="#finance" class="text-primary hover:text-accent">#</a></span>
+                    Finance Detail
+                </h3>
+                <div class="flex flex-col gap-3">
+                    <div class="not-prose flex flex-wrap gap-3">
+                        <div class="form-control w-full max-w-xs">
+                            <label class="label">
+                              <span class="label-text">NPWP</span>
+                            </label>
+                            <input type="text" placeholder="Type here" value="XXXXXXXXXXXXXXXXXX" class="input input-bordered w-full" disabled />
+                        </div>
+                    </div>
+                    <div class="not-prose flex flex-wrap gap-3">
+                        <div class="form-control w-full max-w-xs">
+                            <label class="label">
+                              <span class="label-text">BANK ACOUNT</span>
+                            </label>
+                            <input type="text" placeholder="Type here" value="BCA" class="input input-bordered w-full" disabled />
+                        </div>
+                        <div class="form-control w-full max-w-xs">
+                            <label class="label">
+                              <span class="label-text">ACOUNT NUMBER</span>
+                            </label>
+                            <input type="text" placeholder="Type here" value="XXXXXXXXX" class="input input-bordered w-full" disabled />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="contract" class="section-content w-full">
+                <h3>
+                    <span class="not-prose"><a href="#contract" class="text-primary hover:text-accent">#</a></span>
+                    Contract Detail
+                </h3>
+                <div class="flex flex-col gap-3">
+                    <div class="not-prose flex flex-wrap gap-3">
+                        <div class="form-control w-full max-w-xs">
+                            <label class="label">
+                              <span class="label-text">Contract Type</span>
+                            </label>
+                            <input type="text" placeholder="Type here" value="PKWT [Grade 5]" class="input input-bordered w-full" disabled />
+                        </div>
+                        <div class="form-control w-full max-w-xs">
+                            <label class="label">
+                              <span class="label-text">Contract Start</span>
+                            </label>
+                            <input type="text" placeholder="Type here" value="XX XXXXXX XXXX" class="input input-bordered w-full" disabled />
+                        </div>
+                        <div class="form-control w-full max-w-xs">
+                            <label class="label">
+                              <span class="label-text">Contract End</span>
+                            </label>
+                            <input type="text" placeholder="Type here" value="XX XXXXXX XXXX" class="input input-bordered w-full" disabled />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </div>
+</Content>
