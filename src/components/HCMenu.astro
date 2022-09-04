@@ -1,0 +1,15 @@
+---
+export interface Props {
+	active: "info" | "request" | "help";
+}
+
+const { active } = Astro.props;
+---
+
+<section class="flex flex-col gap-3 grow-0">
+    <ul class="menu bg-base-100 w-56">
+        <li><a href="/sigmaku/hc" class={active === "info" ? "active":""}>Information</a></li>
+        <li><a href="/sigmaku/hc/request" class={active === "request" ? "active":""}>Request</a></li>
+        <li><a href="/sigmaku/hc/help" class={active === "help" ? "active":""}>Need Help ?</a></li>
+    </ul>
+</section>
