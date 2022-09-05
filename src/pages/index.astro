@@ -2,6 +2,7 @@
 import Content from '../layouts/Content.astro';
 import Card from '../components/Card.astro';
 import DarkModeToggle from '../components/DarkModeToggle.vue';
+import { faker } from "@faker-js/faker";
 ---
 
 <Content title="Home">
@@ -24,30 +25,29 @@ import DarkModeToggle from '../components/DarkModeToggle.vue';
 		<DarkModeToggle client:only="vue" />
 	</div>
 	<div class="divider"></div>
-	<p class="instructions">
-		Check out the <code>src/pages</code> directory to get started.<br />
-		<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
-	</p>
-	<div class="flex gap-3">
+	<div class="alert mb-6">
+		<div class="prose">
+			<h2>Company News</h2>
+		</div>
+	  </div>
+	<div class="flex gap-3 px-2 mb-12">
 		<Card
+			image="/sigmaku/image/news-1.jpg"
 			href="https://docs.astro.build/"
-			title="Documentation"
-			body="Learn how Astro works and explore the official API docs."
-		/>
+			title={faker.lorem.sentence()}
+			body={faker.lorem.paragraph()}
+			/>
 		<Card
+			image="/sigmaku/image/news-2.jpg"
 			href="https://astro.build/integrations/"
-			title="Integrations"
-			body="Supercharge your project with new frameworks and libraries."
-		/>
+			title={faker.lorem.sentence()}
+			body={faker.lorem.paragraph()}
+			/>
 		<Card
+			image="/sigmaku/image/news-3.jpg"
 			href="https://astro.build/themes/"
-			title="Themes"
-			body="Explore a galaxy of community-built starter themes."
-		/>
-		<Card
-			href="https://astro.build/chat/"
-			title="Chat"
-			body="Come say hi to our amazing Discord community. ❤️"
+			title={faker.lorem.sentence()}
+			body={faker.lorem.paragraph()}
 		/>
 	</div>
 </Content>

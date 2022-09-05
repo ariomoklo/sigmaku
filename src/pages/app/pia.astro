@@ -1,0 +1,91 @@
+---
+import Content from "../../layouts/Content.astro";
+import Card from '../../components/Card.astro';
+import { faker } from '@faker-js/faker';
+
+const teams = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+---
+
+<Content title="Zaid Billah">
+    <div class="flex min-h-[85vh] gap-3">
+        <section class="flex flex-col gap-3 grow-0">
+            <figure class="w-64 h-64 mb-12" slot="image">
+                <img src="/sigmaku/pia.png" alt="App" class="h-64 w-64">
+            </figure>
+            <div class="prose">
+                <h5 class="mb-0 text-primary font-bold">PIA</h5>
+                <p class="mt-0">Project Implementation Application</p>
+            </div>
+            <div class="prose">
+                <h5 class="mb-0 text-primary font-bold">Email Help</h5>
+                <p class="mt-0">helpdesk@sigma.co.id</p>
+            </div>
+            <div class="prose">
+                <h5 class="mb-0 text-primary font-bold">Contact Help</h5>
+                <p class="my-0">+62 XXXX XXXX XXXX</p>
+                <p class="mt-0">{faker.name.fullName()}</p>
+            </div>
+        </section>
+        <section class="grow-0">
+            <div class="divider divider-horizontal h-full"></div>
+        </section>
+        <section class="prose grow max-w-none mb-12">
+
+            <div id="about" class="section-content w-full">
+                <h3>
+                    <span class="not-prose"><a href="#about" class="text-primary hover:text-accent">#</a></span>
+                    About
+                </h3>
+                <p>{faker.lorem.paragraph()}</p>
+                <p>{faker.lorem.paragraph()}</p>
+                <p>{faker.lorem.paragraph()}</p>
+            </div>
+
+            <div id="news" class="section-content w-full">
+                <h3>
+                    <span class="not-prose"><a href="#news" class="text-primary hover:text-accent">#</a></span>
+                    CIS News
+                </h3>
+                
+                <div class="not-prose flex flex-col gap-3">
+                    <Card 
+                        href=""
+                        title={faker.lorem.sentence()}
+                        body={faker.lorem.paragraph()}>
+                    </Card>
+                    <Card 
+                        href=""
+                        title={faker.lorem.sentence()}
+                        body={faker.lorem.paragraph()}>
+                    </Card>
+                </div>
+            </div>
+            
+            <div id="changelog" class="section-content w-full">
+                <h3>
+                    <span class="not-prose"><a href="#changelog" class="text-primary hover:text-accent">#</a></span>
+                    Changelogs
+                </h3>
+                
+                <div class="not-prose flex flex-col gap-3 mb-6">
+                    <Card 
+                        href=""
+                        title="PIA v.2.2.0"
+                        body={faker.lorem.paragraph()}>
+                    </Card>
+                    <Card 
+                        href=""
+                        title="PIA v.2.1.2"
+                        body={faker.lorem.paragraph()}>
+                    </Card>
+                    <Card 
+                        href=""
+                        title="PIA v.2.1.1"
+                        body={faker.lorem.paragraph()}>
+                    </Card>
+                </div>
+            </div>
+
+        </section>
+    </div>
+</Content>
